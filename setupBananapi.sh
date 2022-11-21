@@ -11,14 +11,14 @@ echo "=============================1.  Python3.8 Installation Done =============
 cd /
 sudo apt-get remove python3-pip
 sudo apt-get install python3-pip
-pip3.8 install pyserial
+pip3.8 install pyserial==3.5
 echo "=============================2.  Pyserial Installation Done ========================================"
 
 sudo chmod 755 /usr/
 sudo apt-get update -y
 sudo apt-get install -y freetds-dev
 sudo apt install unixodbc-dev
-pip3.8 install pymssql
+pip3.8 install pymssql==2.2.5
 echo "=============================2.  pymssql Installation Done ========================================"
 echo "Adding USER to dialout group for Serial communication......."
 sudo adduser $USER dialout 
